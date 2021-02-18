@@ -1,25 +1,34 @@
 ﻿using System;
+using System.Runtime.Remoting.Messaging;
+using System.Threading;
 
 
 namespace TestingCode
 {
     class Program
     {
-        public delegate int delegateDemo(int a, int b);
+        public delegate int Del(int x, int y);
 
-        static int Sum(int x, int y)
+        static int Calculate(int a, int b)
         {
-            var z = x + y;
-            Console.WriteLine("Sum() = " + z);
-            return z;
+            var sum = a + b;
+            Console.WriteLine("Calculate method : " + sum);
+            return sum;
         }
 
-        static void Main(string[] args)
+        static void CalculationDone(IAsyncResult res)
         {
-            delegateDemo d = Sum;
-            IAsyncResult result = d.BeginInvoke(2, 3, null, null);
-            int sum = d.EndInvoke(result);
-            Console.WriteLine("Main() = " + sum);
+            Thread.Sleep(1000);
+            Del d = ((AsyncResult) res).AsyncDelegate as Del;
+            int sum = d.EndInvoke(res);
+            Console.WriteLine("Callback method : " + sum);
+        }
+
+        public static void Main(string[] args)
+        {
+            Del d = Calculate;
+            d.BeginInvoke(3, 4, CalculationDone, null);
+            Console.WriteLine("End");
             Console.ReadLine();
         }
     }
