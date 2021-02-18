@@ -7,3 +7,10 @@ C:\Users\z003u8vr\source\repos\TestingCode\TestingCode\obj\Debug\TestingCode.exe
 C:\Users\z003u8vr\source\repos\TestingCode\TestingCode\obj\Debug\TestingCode.pdb
 C:\Users\z003u8vr\source\repos\TestingCode\TestingCode\obj\Debug\TestingCode.Resource1.resources
 C:\Users\z003u8vr\source\repos\TestingCode\TestingCode\obj\Debug\TestingCode.csproj.GenerateResource.cache
+C:\Users\z003u8vr\Desktop\Test2\TestingCode\bin\Debug\TestingCode.exe.config
+C:\Users\z003u8vr\Desktop\Test2\TestingCode\bin\Debug\TestingCode.exe
+C:\Users\z003u8vr\Desktop\Test2\TestingCode\bin\Debug\TestingCode.pdb
+C:\Users\z003u8vr\Desktop\Test2\TestingCode\obj\Debug\TestingCode.csprojAssemblyReference.cache
+C:\Users\z003u8vr\Desktop\Test2\TestingCode\obj\Debug\TestingCode.csproj.CoreCompileInputs.cache
+C:\Users\z003u8vr\Desktop\Test2\TestingCode\obj\Debug\TestingCode.exe
+C:\Users\z003u8vr\Desktop\Test2\TestingCode\obj\Debug\TestingCode.pdb
